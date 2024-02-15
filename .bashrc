@@ -51,8 +51,8 @@ shopt -s checkwinsize # checks term size when bash regains control
 bind "set completion-ignore-case on"
 
 ## ARCHIVE EXTRACTION
-# usage: ex <file>
-ex ()
+# usage: extract <file>
+extract ()
 {
   if [ -f "$1" ] ; then
     case $1 in
