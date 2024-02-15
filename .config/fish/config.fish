@@ -86,10 +86,10 @@ alias .4='cd ../../../..'
 alias .5='cd ../../../../..'
 
 # Changing "ls" to "eza"
-alias ls='eza -al --color=always --group-directories-first' # my preferred listing
-alias la='eza -a --color=always --group-directories-first'  # all files and dirs
+alias ls='eza --color=always --group-directories-first'     # my preferred listing
+alias la='eza -la --color=always --group-directories-first' # all files and dirs
 alias ll='eza -l --color=always --group-directories-first'  # long format
-alias lt='eza -aT --color=always --group-directories-first' # tree listing
+alias lt='eza -aT -I ".git" --color=always --group-directories-first ' # tree listing
 alias l.='eza -a | egrep "^\."'
 
 # Colorize grep output (good for log files)
