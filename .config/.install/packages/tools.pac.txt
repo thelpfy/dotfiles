@@ -1,0 +1,6 @@
+deluge
+discord
+nextcloud-client
+pdfarranger
+telegram-desktop
+tipp10

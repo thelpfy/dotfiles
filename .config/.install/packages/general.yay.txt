@@ -1,0 +1,5 @@
+pfetch
+bibata-cursor-theme
+trizen
+pacseek
+

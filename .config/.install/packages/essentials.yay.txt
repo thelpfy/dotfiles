@@ -1,0 +1,4 @@
+brave-bin
+joplin
+vscodium-bin
+

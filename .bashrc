@@ -77,27 +77,5 @@ extract ()
   fi
 }
 
-# >>> conda initialize >>>
-# !! Contents within this block are managed by 'conda init' !!
-__conda_setup="$('/home/thelpfy/miniconda3/bin/conda' 'shell.bash' 'hook' 2> /dev/null)"
-if [ $? -eq 0 ]; then
-    eval "$__conda_setup"
-else
-    if [ -f "/home/thelpfy/miniconda3/etc/profile.d/conda.sh" ]; then
-        . "/home/thelpfy/miniconda3/etc/profile.d/conda.sh"
-    else
-        export PATH="/home/thelpfy/miniconda3/bin:$PATH"
-    fi
-fi
-unset __conda_setup
-# <<< conda initialize <<<
-
-# Setting fish as interactive shell only
-if [[ $(ps --no-header --pid=$PPID --format=comm) != "fish" && -z ${BASH_EXECUTION_STRING} ]]
-then
-	shopt -q login_shell && LOGIN_OPTION='--login' || LOGIN_OPTION=''
-	exec fish $LOGIN_OPTION
-fi
-
 ### SETTING THE STARSHIP PROMPT ###
 eval "$(starship init bash)"

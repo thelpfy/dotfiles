@@ -1,0 +1,11 @@
+xdg-desktop-portal-hyprland
+polkit-kde-agent
+qt5-wayland
+qt6-wayland
+pipewire
+wireplumber
+waybar
+grim
+slurp
+swappy
+cliphist
