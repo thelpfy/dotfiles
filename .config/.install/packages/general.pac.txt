@@ -15,6 +15,7 @@ fuse2
 gtk4
 gum
 gvfs
+kwallet-pam
 libadwaita
 man-pages
 mousepad

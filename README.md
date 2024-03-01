@@ -14,21 +14,13 @@ For the repository
 pacman -S git
 ```
 
-### Stow
-
-For the symlinking of the .config
-
-```
-pacman -S stow
-```
-
 ## Installation
 
-First checkout the .config repo in you $HOME directory using git
-
 ```
-git clone git@github.com:thelpfy/.config.git
-cd .config
+cd ~
+git clone git@github.com:thelpfy/dotfiles.git
+cd dotfiles
+bash ./.config/.install/install.sh
 ```
 
 then use GNU stow to create the symlinks

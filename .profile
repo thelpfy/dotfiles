@@ -3,9 +3,15 @@
 #
 
 ### COMMANDS 
+alias pacman='sudo pacman'
 
 # Colorize grep output (good for log files)
 alias grep='grep --color=auto'
+alias egrep='egrep --color=auto'
+alias fgrep='fgrep --color=auto'
+
+# get error messages from journalctl
+alias jctl="journalctl -p 3 -xb"
 
 # adding flags
 alias df='df -h'                          # human-readable sizes
@@ -32,11 +38,18 @@ alias .3='cd ../../..'
 alias .4='cd ../../../..'
 alias .5='cd ../../../../..'
 
+# root privileges
+alias doas="doas --"
+
 ### ENVIRONMENT
+
+### "less" as manpager
+export MANPAGER="less"
 
 # EXPORT
 export TERM="xterm-256color" 
 export HISTCONTROL=ignoredups:erasedups           # no duplicate entries
+export HISTORY_IGNORE="(ls|cd|pwd|exit|sudo reboot|history|cd -|cd ..)"
 
 # FORMATING
 export LANG="en_US.UTF-8"

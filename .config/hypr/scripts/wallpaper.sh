@@ -98,7 +98,7 @@ swww img $wallpaper \
 # ----------------------------------------------------- 
 # Send notification
 # ----------------------------------------------------- 
-sleep 1
-notify-send "Colors and Wallpaper updated" "with image $newwall"
+#sleep 1
+#notify-send "Colors and Wallpaper updated" "with image $newwall"
 
 echo "DONE!"
