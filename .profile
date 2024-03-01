@@ -5,6 +5,10 @@
 ### COMMANDS 
 alias pacman='sudo pacman'
 
+### EDITORS
+alias vi='vim'
+alias vim='nvim'
+
 # Colorize grep output (good for log files)
 alias grep='grep --color=auto'
 alias egrep='egrep --color=auto'
@@ -38,13 +42,14 @@ alias .3='cd ../../..'
 alias .4='cd ../../../..'
 alias .5='cd ../../../../..'
 
-# root privileges
-alias doas="doas --"
-
 ### ENVIRONMENT
 
 ### "less" as manpager
 export MANPAGER="less"
+
+# EDITORS
+export VISUAL="vscodium"
+export EDITOR="nvim"
 
 # EXPORT
 export TERM="xterm-256color" 
