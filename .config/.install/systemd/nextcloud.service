@@ -1,0 +1,11 @@
+[Unit]
+Description=Nextcloud Cloud Storage
+After=network-online.target nss-lookup.target
+Wants=network-online.target
+[Service]
+Restart=on-failure
+RestartSec=5s
+ExecStart=/usr/bin/nextcloud
+[Install]
+WantedBy=multi-user.target
+

@@ -3,4 +3,5 @@ iscan
 nomachine
 pcloud-drive
 protonvpn
+localsend-bin
 

@@ -11,11 +11,6 @@ rm -rf ./yay-git
 
 # general
 sudo pacman -S - < $folder/general.pac.txt
-yay -S - < $folder/general.yay.txt
-
-# hyprland
-sudo pacman -S - < $folder/hyprland.pac.txt
-yay -S - < $folder/hyprland.yay.txt
 
 # essentials
 sudo pacman -S - < $folder/essentials.pac.txt
@@ -25,13 +20,9 @@ yay -S - < $folder/essentials.yay.txt
 sudo pacman -S - < $folder/tools.pac.txt
 yay -S - < $folder/tools.yay.txt
 
-# wallpapers
-bash ./wallpapers/install.sh
-wal -i ~/.config/wallpapers/default.jpg
+# install joplin
 
-# Services
-sudo systemctl enable NetworkManager
-sudo systemctl start NetworkManager
+wget https://github.com/laurent22/joplin/releases/download/v2.14.19/Joplin-2.14.19.AppImage
 
-sudo systemctl enable bluetooth
-sudo systemctl start bluetooth
+# Chnage shell
+chsh -s /usr/bin/zsh

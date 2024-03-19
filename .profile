@@ -29,9 +29,9 @@ alias find=fd
 alias code=vscodium
 
 # ls commands
-alias ls='eza -l --color=always --group-directories-first' # my preferred listing
-alias la='eza -la --color=always --group-directories-first'  # all files and dirs
-alias ll='eza -l --color=always --group-directories-first'  # long format
+alias ls='ll' # set to ll
+alias la='ll -a'  # all files and dirs
+alias ll='eza -l --group --color=always --group-directories-first'  # long format
 alias lt='eza -aT -I ".git" --color=always --group-directories-first' # tree listing
 alias l.='eza -a | egrep "^\."'
 
